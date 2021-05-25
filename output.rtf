@@ -1,0 +1,244 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 output from the program for Pipleline Simulation\
+\
+Clock Cycle 0\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x0 nop incrPC=7a000\
+IF/ID Read(read by the ID stage)\
+Inst = 0x0 nop incrPC=7a000\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBActionnop\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle1(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0xa1020000 [ sw  $2 0 ($8) ] incrPC=7a004\
+IF/ID Read(read by the ID stage)\
+Inst = 0x0 nop incrPC=7a000\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBActionnop\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle2(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x810afffc [ lw  $10 -4 ($8) ] incrPC=7a008\
+IF/ID Read(read by the ID stage)\
+Inst = 0xa1020000 [ sw  $2 0 ($8) ] incrPC=7a004\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = -1 ALUSrc=1 ALUOp=0 MemRead=0 MemWrite=1 MemToReg=-1 RegWrite=0 ReadReg1Value=264 ReadReg2Value=258 SEOffset=0 WriteReg_20_16=2 WriteReg_15_11=0 Function-1incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBActionnop\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle3(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x831820 [ add $3 ,$4 ,$3] incrPC=7a00c\
+IF/ID Read(read by the ID stage)\
+Inst = 0x810afffc [ lw  $10 -4 ($8) ] incrPC=7a008\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=1 ALUOp=0 MemRead=1 MemWrite=0 MemToReg=1 RegWrite=1 ReadReg1Value=264 ReadReg2Value=266 SEOffset=-4 WriteReg_20_16=10 WriteReg_15_11=31 Function-1incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = -1 ALUSrc=1 ALUOp=0 MemRead=0 MemWrite=1 MemToReg=-1 RegWrite=0 ReadReg1Value=264 ReadReg2Value=258 SEOffset=0 WriteReg_20_16=2 WriteReg_15_11=0 Function-1incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBActionnop\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle4(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x1263820 [ add $7 ,$9 ,$6] incrPC=7a010\
+IF/ID Read(read by the ID stage)\
+Inst = 0x831820 [ add $3 ,$4 ,$3] incrPC=7a00c\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=260 ReadReg2Value=259 SEOffset=-1 WriteReg_20_16=3 WriteReg_15_11=3 Function32incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=1 ALUOp=0 MemRead=1 MemWrite=0 MemToReg=1 RegWrite=1 ReadReg1Value=264 ReadReg2Value=266 SEOffset=-4 WriteReg_20_16=10 WriteReg_15_11=31 Function-1incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBActionnop\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle5(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x1224820 [ add $9 ,$9 ,$2] incrPC=7a014\
+IF/ID Read(read by the ID stage)\
+Inst = 0x1263820 [ add $7 ,$9 ,$6] incrPC=7a010\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=265 ReadReg2Value=262 SEOffset=-1 WriteReg_20_16=6 WriteReg_15_11=7 Function32incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=260 ReadReg2Value=259 SEOffset=-1 WriteReg_20_16=3 WriteReg_15_11=3 Function32incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=207 SWValue=103 WriteRegNum=3\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBActionnop\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle6(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[103]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x81180000 [ lw  $24 0 ($8) ] incrPC=7a018\
+IF/ID Read(read by the ID stage)\
+Inst = 0x1224820 [ add $9 ,$9 ,$2] incrPC=7a014\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=265 ReadReg2Value=258 SEOffset=-1 WriteReg_20_16=2 WriteReg_15_11=9 Function32incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=265 ReadReg2Value=262 SEOffset=-1 WriteReg_20_16=6 WriteReg_15_11=7 Function32incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=20f SWValue=106 WriteRegNum=7\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=207 SWValue=103 WriteRegNum=3\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=207 WriteRegNum=3 WBAction($3will be set to a new value of207 in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=nop\
+\
+Clock Cycle7(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[207]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[107]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x81510010 [ lw  $17 16 ($10) ] incrPC=7a01c\
+IF/ID Read(read by the ID stage)\
+Inst = 0x81180000 [ lw  $24 0 ($8) ] incrPC=7a018\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=1 ALUOp=0 MemRead=1 MemWrite=0 MemToReg=1 RegWrite=1 ReadReg1Value=264 ReadReg2Value=280 SEOffset=0 WriteReg_20_16=24 WriteReg_15_11=0 Function-1incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=265 ReadReg2Value=258 SEOffset=-1 WriteReg_20_16=2 WriteReg_15_11=9 Function32incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=20b SWValue=102 WriteRegNum=9\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=20f SWValue=106 WriteRegNum=7\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=20f WriteRegNum=7 WBAction($7will be set to a new value of20f in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=207 WriteRegNum=3 WBAction=($3will be set to a new value of207 in the WB stage)\
+\
+Clock Cycle8(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[207]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[20f]  Registers:[108]  Registers:[109]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x624022 [ sub  $8 ,$3 ,$2] incrPC=7a020\
+IF/ID Read(read by the ID stage)\
+Inst = 0x81510010 [ lw  $17 16 ($10) ] incrPC=7a01c\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=1 ALUOp=0 MemRead=1 MemWrite=0 MemToReg=1 RegWrite=1 ReadReg1Value=266 ReadReg2Value=273 SEOffset=16 WriteReg_20_16=17 WriteReg_15_11=0 Function-1incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=1 ALUOp=0 MemRead=1 MemWrite=0 MemToReg=1 RegWrite=1 ReadReg1Value=264 ReadReg2Value=280 SEOffset=0 WriteReg_20_16=24 WriteReg_15_11=0 Function-1incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=20b SWValue=102 WriteRegNum=9\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=20b WriteRegNum=9 WBAction($9will be set to a new value of20b in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=20f WriteRegNum=7 WBAction=($7will be set to a new value of20f in the WB stage)\
+\
+Clock Cycle9(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[207]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[20f]  Registers:[108]  Registers:[20b]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x0 XX incrPC=7a024\
+IF/ID Read(read by the ID stage)\
+Inst = 0x624022 [ sub  $8 ,$3 ,$2] incrPC=7a020\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=519 ReadReg2Value=258 SEOffset=-1 WriteReg_20_16=2 WriteReg_15_11=8 Function34incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=1 ALUOp=0 MemRead=1 MemWrite=0 MemToReg=1 RegWrite=1 ReadReg1Value=266 ReadReg2Value=273 SEOffset=16 WriteReg_20_16=17 WriteReg_15_11=0 Function-1incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction($9will be set to a new value of20b in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=20b WriteRegNum=9 WBAction=($9will be set to a new value of20b in the WB stage)\
+\
+Clock Cycle10(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[207]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[20f]  Registers:[108]  Registers:[20b]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x0 XX incrPC=7a028\
+IF/ID Read(read by the ID stage)\
+Inst = 0x0 XX incrPC=7a024\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 1 ALUSrc=0 ALUOp=10 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ReadReg1Value=519 ReadReg2Value=258 SEOffset=-1 WriteReg_20_16=2 WriteReg_15_11=8 Function34incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=105 SWValue=102 WriteRegNum=8\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ALUResult=0 SWValue=0 WriteRegNum=0\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction($9will be set to a new value of20b in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=($9will be set to a new value of20b in the WB stage)\
+\
+Clock Cycle11(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[207]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[20f]  Registers:[108]  Registers:[20b]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x0 XX incrPC=7a02c\
+IF/ID Read(read by the ID stage)\
+Inst = 0x0 XX incrPC=7a028\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=105 SWValue=102 WriteRegNum=8\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=105 SWValue=102 WriteRegNum=8\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=105 WriteRegNum=8 WBAction($8will be set to a new value of105 in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=0 LWDataValue=0 ALUResult=0 WriteRegNum=0 WBAction=($9will be set to a new value of20b in the WB stage)\
+\
+Clock Cycle12(Before we copy the write side of pipeline registers to the read side)\
+Registers:[101]  Registers:[102]  Registers:[207]  Registers:[104]  Registers:[105]  Registers:[106]  Registers:[20f]  Registers:[105]  Registers:[20b]  Registers:[10a]  Registers:[10b]  Registers:[10c]  Registers:[10d]  Registers:[10e]  Registers:[10f]  Registers:[110]  Registers:[111]  Registers:[112]  Registers:[113]  Registers:[114]  Registers:[115]  Registers:[116]  Registers:[117]  Registers:[118]  Registers:[119]  Registers:[11a]  Registers:[11b]  Registers:[11c]  Registers:[11d]  Registers:[11e]  Registers:[11f]  IF/ID Write(written to by the IF stage)\
+Inst = 0x0 XX incrPC=7a030\
+IF/ID Read(read by the ID stage)\
+Inst = 0x0 XX incrPC=7a02c\
+ID/EX Write(written to by the ID stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+ID/EX Read(read by the EX stage)\
+Control: RegDst = 0 ALUSrc=0 ALUOp=0 MemRead=0 MemWrite=0 MemToReg=0 RegWrite=0 ReadReg1Value=0 ReadReg2Value=0 SEOffset=0 WriteReg_20_16=0 WriteReg_15_11=0 Function0incrPC=0\
+EX/MEM Write(written to by the EX stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=105 SWValue=102 WriteRegNum=8\
+EX/MEM Read(read by the MEM stage)\
+Control: MemRead=0 MemWrite=0 MemToReg=0 RegWrite=1 ALUResult=105 SWValue=102 WriteRegNum=8\
+MEM/WB Write(written to by the MEM stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=105 WriteRegNum=8 WBAction($8will be set to a new value of105 in the WB stage)\
+MEM/WB Read(read by the WB stage)\
+Control: MemToReg=0 RegWrite=1 LWDataValue=ffffffff ALUResult=105 WriteRegNum=8 WBAction=($8will be set to a new value of105 in the WB stage)\
+}
